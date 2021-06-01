@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(202, 201, 201);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#title{
+    border: 0px;
+    text-align: center;
+}
+
+#img-div{
+    /*border: 2px solid green;*/
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;;
+    padding: 10px;
+    background-color: rgb(216, 215, 215);
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tribute-info{
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.75rem;
+}
+
+ul{
+    line-height: 1.6;    
+}
+
+#button-f{
+    border: 1.5px solid black;
+    border-radius: 10%;
+    padding: 0px 5px 0px 5px;
+}
+/* unvisited link */
+a:link {
+    color: #ffffff;
+    background-color: rgb(28, 126, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #d8d8d8;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+  }

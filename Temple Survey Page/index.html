@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;1,400&display=swap" rel="stylesheet"> 
+    </head>
+    <div class="title-text">
+        <h1 id="title">A Temple Form</h1>
+        <p id="description">A simple form to get to know temple students and learn form control</p>
+    </div>   
+        <main>
+            <form action="" id="survey-form">
+                <div class="form-collection grid-cont">
+
+                    <div id="form-f-name">
+                        <label class="form-item" for="name" id="name-label"> First Name:<br>
+                            <input type="text" id="name" placeholder="Your first name.." required>
+                        </label>
+                    </div>
+
+                    <div id="form-l-name">
+                        <label class="form-item" for="l-name"> Last Name:<br>
+                            <input type="text" id="l-name" placeholder="Your last name.." required>
+                        </label>
+                    </div>
+
+                    <div id="form-email">
+                        <label class="form-item" for="l-name" id="email-label"> Email:<br>
+                            <input type="email" id="email" placeholder="Your Email.." required>
+                        </label>
+                    </div>
+                    
+                    <div id="form-age">
+                        <label class="form-item" for="age" id="number" id="number-label"> Age(Optional):
+                            <input type="number" id="number" placeholder="Your age.." min="16" max="90">
+                        </label>
+                    </div>
+
+                    <div id="class-standing">
+                        <label class="form-item" for="class-dropdown">
+                            Select Class Standing: <br>
+                            <select name="rank" id="class-dropdown">
+                                <option value=1>Freshman</option>
+                                <option value=2>Sophomore</option>
+                                <option value=3>Junior</option>
+                                <option value=4>Senior</option>
+                                <option value=5>Grad.</option>
+                                <option value=0>Alum.</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div id='dropdown'>
+                        <label class="form-item" for="major-dropdown">
+                            Select Major (if more then 1 is applicable choose the one that best fits ur intrest)<br>
+                            <select name="rank" id="major-dropdown">
+                                <option value="AGRI">AGRICULTURE</option>
+                                <option value="ARCH">ARCHITECTURE</option>
+                                <option value="ARES">AREA Studies (ex: Women, LGBT)</option>
+                                <option value="ARTS">ARTS</option>
+                                <option value="FOXS">BUSINESS/COMMUNICATIONS</option>
+                                <option value="CSEE">CS/Math/ENGINEERING</option>
+                                <option value="EUDC">EDUCATION</option>
+                                <option value="LANG">LANGUAGES</option>
+                                <option value="HLTH">HEALTH</option>
+                                <option value="PHIL">PHILOSOPHY/RELIGION</option>
+                                <option value="HSCI">Bio/Chem/Phy</option>
+                                <option value="LAWP">LAW/LEGAL</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div id="housing-chkbx">
+                        Select Housing type: <br><br>
+                        <label for="dorm">
+                            <input type="radio" name="housing" value="dorm" id="dorm">
+                            College Dorm  
+                        </label>
+                        <br>
+                        <label for="home">
+                            <input type="radio" name="housing" value="home" id="home">
+                            At Home
+                        </label>
+                        <br>
+                        <label for="O-state">
+                            <input type="radio" name="housing" value="O-state" id="O-state">
+                            Out of State
+                        </label>    
+                    </div>
+                    
+                    <div id='form-impv'>
+                        What would you like to see improved at Temple?<br>
+                        <label for="onClass"><input type="checkbox" id="onClass" name="onClass" value="onClass">Online classes</label><br>
+                        <label for="MMajors"><input type="checkbox" id="MMajors" name="MMajors" value="MMajors">More Majors</label><br>
+                        <label for="BCric"><input type="checkbox" id="BCric" name="BCric" value="BCric">Better Curriculums</label><br>
+                        <label for="MActi"><input type="checkbox" id="MActi" name="MActi" value="MActi">More Activities</label><br>
+                    </div>
+
+                    <div id="form-comments">   
+                        Comments or suggestions go here:<br>
+                        <textarea id="textblock" name="textblock" rows="5" placeholder="Enter Comments here"></textarea>
+                    </div>
+
+                    <div id="btn-sub"> 
+                        <input type="submit" value="Submit" id="submit"> 
+                    </div>
+
+                    <small id="bg-text">*Background image is credited to <a href="https://whyy.org/wp-content/uploads/2017/12/2017-12-06-e-lee-philadelphia-temple-university-paley-library-1-e1512658573833.jpg">whyy.org</a></small>
+                </div> 
+                
+                
+            </form>
+        </main>
+</html>

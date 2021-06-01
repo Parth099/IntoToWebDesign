@@ -1,0 +1,170 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: linear-gradient(90deg, red, yellow);
+    background: url(https://whyy.org/wp-content/uploads/2017/12/2017-12-06-e-lee-philadelphia-temple-university-paley-library-1-e1512658573833.jpg);
+    background-size: 120% auto;
+}
+.title-text{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+main{
+    background-color: #aa203a;
+    color: white;
+    border: 2px #fff solid;
+    border-radius: 2%;
+    padding: 10px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+#form-f-name{
+    grid-area: fn;
+}
+#form-l-name{
+    grid-area: ln;
+}
+#form-email{
+    grid-area: em;
+}
+#class-standing{
+    grid-area: cs;
+}
+#dropdown{
+    grid-area: ms;
+}
+#housing-chkbx{
+    grid-area: hc;
+}
+#form-impv{
+    grid-area: iv;
+}
+#form-comments{
+    margin: 0 5px 0 5px;
+    text-align: center;
+    grid-area: ct;
+    height: 110%;
+}
+#btn-sub{
+    grid-area: bs;
+    align-self: stretch;
+}
+#form-age{
+    grid-area: ag;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.title-text{
+    text-align: center;
+}
+input[type=text], input[type=email], input[type=number],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+a:link {
+    color: #FFF;
+}
+  
+  /* visited link */
+a:visited {
+    color: #FFF;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: #FFF;
+}
+
+.grid-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+        "fn ln"
+        "em em"
+        "ag cs"
+        "ms ms"
+        "hc hc"
+        "iv iv"
+        "ct ct"
+        "bs bs";
+}
+textarea{
+    width:100%;
+    height: auto;
+    border: 2px #fff solid;
+    border-radius: 1%;
+}
+
+/* media and dymanics #a51d35 */
+
+@media only screen and (max-width: 1460px) {
+    body {
+      background: url(https://www.penncapital-star.com/wp-content/uploads/2020/09/TEMPLENEWART.jpg);
+      background-size: 110% auto;
+    }
+    #bg-text{
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 1260px) {
+    body {
+      background: linear-gradient(0deg, rgb(173, 25, 25), white);
+    }
+    #bg-text{
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+    main {
+      width: 50%;
+    }
+  }
+
+@media only screen and (max-width: 720px) {
+    main {
+      width: 80%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    main {
+      width: 90%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .grid-cont{
+        grid-template-areas:
+        "fn fn"
+        "ln ln"
+        "em em"
+        "ag ag"
+        "cs cs"
+        "ms ms"
+        "hc hc"
+        "iv iv"
+        "ct ct"
+        "bs bs";
+    }
+}
