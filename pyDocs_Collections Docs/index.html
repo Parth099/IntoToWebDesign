@@ -8,33 +8,37 @@
     </head>
     <body id="top">
         <nav class="StickyNav" id="navbar">
-            <h1 id="nav-title">Python Collections Module</h1>
+          <header id="header">
+            <h1>Python Collections Module</h1>
+          </header>
             <ul class='no-bullets'>
-                <li class=navlist ><a href="#knowBefore">What You should know already</a></li>
-                <li class=navlist ><a href="#setup">Notes & Setup</a></li>
-                <li class=navlist ><a href="#counter">Collections: Counter</a></li>
-                <li class=navlist ><a href="#namedTuple">Collections: NamedTuple</a></li>
-                <li class=navlist ><a href="#ordDict">Collections: OrderedDict</a></li>
-                <li class=navlist ><a href="#defDict">Collections: DefaultDict</a></li>
-                <li class=navlist ><a href="#ChainM">Collections: ChainMap</a></li>
+                <li class=navlist ><a class="nav-link" href="#What_You_should_know_already">What You should know already</a></li>
+                <li class=navlist ><a class="nav-link" href="#Notes_and_Setup">Notes and Setup</a></li>
+                <li class=navlist ><a class="nav-link" href="#Collections:_Counter">Collections: Counter</a></li>
+                <li class=navlist ><a class="nav-link" href="#Collections:_NamedTuple">Collections: NamedTuple</a></li>
+                <li class=navlist ><a class="nav-link" href="#Collections:_OrderedDict">Collections: OrderedDict</a></li>
+                <li class=navlist ><a class="nav-link" href="#Collections:_DefaultDict">Collections: DefaultDict</a></li>
+                <li class=navlist ><a class="nav-link" href="#Collections:_ChainMap">Collections: ChainMap</a></li>
             </ul>
         </nav>
-        <main class="main-doc">
-            <section class="main-section" id="knowBefore">
+        <main id="main-doc">
+            <section class="main-section" id="What_You_should_know_already">
                 <header><h1 class="docs-heading">What You should know already</h1></header>
                 <p>Its evident that knowledge of basic Python is required. However here is of <em>external</em> items:</p>
                 <ul class="textlist">
-                    <li>One the most important things to know is the <p class="code-text">dict</p> class and hashable objects.<br>A hashable datatype has a <p class="code-text">__hash__</p> magic method defined. Most Objects from popular libraries are are hashable</li>
-                    <li>The <p class="code-text">tuple</p> class is also important. For ease of understanding a tuple is an ArrayList that cannot change in size or be edited after creation.</li>
-                    <li>Knowledge of the 4 base Python Datatypes is required <p class="code-text">int</p>, <p class="code-text">float</p>, <p class="code-text">str</p>, <p class="code-text">List</p></li>
+                    <li>One the most important things to know is the <code>dict</code> class and hashable objects.<br>A hashable datatype has a <code>__hash__</code> magic method defined. Most Objects from popular libraries are are hashable.</li>
+                    <li>The <code>tuple</code> class is also important. For ease of understanding a tuple is an ArrayList that cannot change in size or be edited after creation.</li>
+                    <li>Knowledge of the 4 base Python Datatypes is required <code>int</code>, <code>float</code>, <code>str</code>, <code>List</code>.</li>
+                    <li>Knowing Objects functionality and inheritance is required.</li>
+                    <li>You should have an understanding of how <code>variadic functions</code> work.</li>
                 </ul>
             </section>
 
-            <section class="main-section" id="setup">
+            <section class="main-section" id="Notes_and_Setup">
                 <header><h1 class="docs-heading">Notes and Setup</h1></header>
                     <div class="content">
                         <h3 class="noPaddMar">Notes</h3>
-                        Python Collections Module is just an extension to preexisting datatypes in Python. The objects covered here are sole extensions of <p class="code-text">tuple</p>, <p class="code-text">dict</p>, <p class="code-text">List</p>, <p class="code-text">Set</p>
+                        Python Collections Module is just an extension to preexisting datatypes in Python. The objects covered here are sole extensions of <code>tuple</code>, <code>dict</code>, <code>List</code>, <code>Set</code>
                         <h3>Setup</h3>
                         A Simple import is all that is required. This module is included in std Python.
                         <p class="code-block">
@@ -45,12 +49,12 @@
                     </div>
                 </section>
             
-            <section class="main-section" id="counter">
+            <section class="main-section" id="Collections:_Counter">
                 <header><h1 class="docs-heading">Collections: Counter</h1></header>
                     <div class='content'>
                         <p>The counter class simply counts the number of hashable objects over a Iterable object
                             <br>
-                            Instantiation of <span class="code-text">counter</span> objects: 
+                            Instantiation of <code>counter</code> objects: 
                         </p>
                         <p class="code-block">
                             from collections import Counter 
@@ -73,9 +77,9 @@
                             Counter({'B': 5, 'A': 3, 'C': 2})<br>
                             Counter({'B': 5, 'A': 3, 'C': 2})<br>
                         </p>
-                        <p>It is evident the function of <span class='code-text'>counter</span>. It is used to count distinct values in a Iterable.</p>
+                        <p>It is evident the function of <code>counter</code>. It is used to count distinct values in a Iterable.</p>
                         <h3 class="docs-heading">Update()</h3>
-                        <p>Counter contains an important <span class="code-text">update()</span> method <br> <h4>Demo</h4></p>
+                        <p>Counter contains an important <code>update()</code> method <br> <h4>Demo</h4></p>
                         <p class="code-block">
                             C = Counter(['B', 'B', 'A', 'B', 'C', 'A', 'B', 'B', 'A', 'C'])<br>
                             C.update(['B', 'C', 'C', 'A'])<br>
@@ -89,10 +93,10 @@
                     </div>
             </section>
 
-            <section class="main-section" id="namedTuple">
+            <section class="main-section" id="Collections:_NamedTuple">
                 <header><h1 class="docs-heading">Collections: NamedTuple</h1></header>
                     <div class='content'>
-                        <p><span class="code-text">NamedTuple</span> is a Factory Function for Tuples that creates Tuples that have fields with names. This can be used as a basic object Factory or storage unit 
+                        <p><code>NamedTuple</code> is a Factory Function for Tuples that creates Tuples that have fields with names. This can be used as a basic object Factory or storage unit 
                             since they take up less space than Arrays and Dicts.</p>
                         <Strong>Demo:</Strong>
                         <p class="code-block">
@@ -107,14 +111,14 @@
                             dict_S = S._asdict()<br>
                             print(dict_S)  
                         </p>
-                        <p>Explanation: A <span class="code-text">NamedTuple Factory</span> 'Store' is created with <em>named</em> fields: 'name', 'location', and 'revenue'</p>
+                        <p>Explanation: A <code>NamedTuple Factory</code> 'Store' is created with <em>named</em> fields: 'name', 'location', and 'revenue'</p>
                         <strong>Output:</strong>
                         <p class="code-block output">
                             Store(name='Walmart', location='Philadelphia', revenue=0) &nbsp &nbsp<span class="comment">#NamedTuple.__repr__()</span><br>
                             {'name': 'Walmart', 'location': 'Philadelphia', 'revenue': 0} <span class="comment">#._asdict()</span>
                         </p>
                         <strong>Accessing Elements:</strong>
-                        You can access elements by index, name or by using <span class="code-text">getattr()</span>.<br>
+                        You can access elements by index, name or by using <code>getattr()</code>.<br>
                         <strong>Example:</strong>
                         <p class="code-block">
                             print("Index  :", S[0])<br>
@@ -130,12 +134,12 @@
                     </div>
             </section>
 
-            <section class="main-section" id="ordDict">
+            <section class="main-section" id="Collections:_OrderedDict">
                 <header><h1 class="docs-heading">Collections: OrderedDict</h1></header>
                 <div class="content">
-                    <p>OrderedDict is an extension of <span class="code-text">dict</span> with order auditing methods.</p>
+                    <p>OrderedDict is an extension of <code>dict</code> with order auditing methods.</p>
                     <strong>Note: </strong>the dict class does not preserve order. To see why you can imagine a dict that has the backend of an array using indexes as keys and a data attr to create a key: value pair. 
-                    Since the hash function used by dict doesn't provide a linear output the <span class="code-text">OrderedDict</span> is used to hold order.
+                    Since the hash function used by dict doesn't provide a linear output the <code>OrderedDict</code> is used to hold order.
                     <br>
                     <strong>Demo: </strong>
                     <p class="code-block">
@@ -172,16 +176,16 @@
                         c 5<br>
                         d 4<br>
                     </p>
-                    <strong>Note: </strong>deleting elements using <span class='code-text'>.pop([<em>element-name</em>])</span>preserves order as well.
+                    <strong>Note: </strong>deleting elements using <code>.pop([<em>element-name</em>])</code>preserves order as well.
                 </div>
             </section>
-            <section class="main-section" id="defDict">
+            <section class="main-section" id="Collections:_DefaultDict">
                 <header><h1 class="docs-heading">Collections: DefaultDict</h1></header>
                 <div class="content">
                     <p>
-                        <span class="code-text">defaultdict</span> is just another extension of <span class="code-text">dict</span>. 
+                        <code>defaultdict</code> is just another extension of <code>dict</code>. 
                         However it is used to bypass the KeyError when a key value pair retrieval is attempted but the key does not exist. DefaultDict fixes this issue by calling 
-                        a supplied <span class="code-text">default_factory</span> that provides the default value required.
+                        a supplied <code>default_factory</code> that provides the default value required.
                     </p>
                     <strong>Demo:</strong>
                     <p class="code-block">
@@ -201,7 +205,7 @@
                         d = defaultdict(default_factory)<br>
                         print(d['Python'])<br>
                     </p>
-                    <strong>Note: </strong>Using this as the <span class="code-text">default_factory</span> makes the default value my dynamic as it can be changed during runtime.
+                    <strong>Note: </strong>Using this as the <code>default_factory</code> makes the default value my dynamic as it can be changed during runtime.
                     <p class="code-block">
                         def constant_factory(value):<br>
                         &nbsp &nbsp    return lambda: value<br>
@@ -210,11 +214,11 @@
                 </div>
             </section>
 
-            <section class="main-section" id="ChainM">
+            <section class="main-section" id="Collections:_ChainMap">
                 <header><h1 class="docs-heading">Collections: ChainMap</h1></header>
                 <div class="content">
                     <p>ChainMap is many uses, likely why its entry on <em>PyDocs</em> is so long</p>
-                    <p>Essentially, <span class="code-text">ChainMap</span> is the combination of user supplied dictionaries and it uses all its 
+                    <p>Essentially, <code>ChainMap</code> is the combination of user supplied dictionaries and it uses all its 
                         <em>child</em> dictionaries to create one dictionary object with the data from each of the base dicts </p>
                     <strong>Demo:</strong>
                     <p class="code-block">
@@ -236,9 +240,9 @@
                         1<br>
                     </p>
                     <strong>Note:</strong>There exist 2 ChainMap default iterables: 
-                        <span class="code-text">chain.keys()</span>
+                        <code>chain.keys()</code>
                         and
-                        <span class="code-text">chain.values()</span>.<br><br>
+                        <code>chain.values()</code>.<br><br>
                     <h3 class="docs-heading">.new_child(dict_obj)</h3>
                     This method adds the supplied dict to the chain.
                     <h2 class="docs-heading">A Useful ChainMap Behavior</h2>
@@ -263,7 +267,7 @@
                         ChainMap({'x': 2, 'y': 4, 'u': 1048576}, {'u': 8, 'v': 16})<br>
                         ChainMap({'x': 2, 'y': 4}, {'u': 8, 'v': 16})
                     </p>
-                    <strong>Explanation: </strong>This paradigm puts new values in the first dict, meaning since it appears first it will hold the value of that key (in this case 'u'). This means that the secondary dicts can be used a default values if a value is deleted or removed 
+                    <strong>Explanation: </strong>This paradigm puts new values in the first dict, meaning since it appears first it will hold the value of that key (in this case 'u'). This means that the secondary dicts can be used a default values<code>(default_factory)</code> if a value is deleted or removed 
                 </div>
             </section>
         </main>
