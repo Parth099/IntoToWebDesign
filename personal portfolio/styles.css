@@ -1,0 +1,186 @@
+*{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --project-margin: 100px;
+  --bk-main: coral;
+  --project-bk: black;
+  --acc2: rgb(65, 105, 225);
+  --imgsz: 3rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: rgb(0, 0, 0);
+  background: var(--bk-main);
+  z-index: -1;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+}
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--acc2);
+}
+.navlink {
+  padding: 20px;
+}
+.navlink:link,
+.navlink:visited {
+  color: white;
+  text-decoration: none;
+}
+.navlink:hover {
+  background-color: var(--bk-main);
+}
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  text-align: center;
+  line-height: 1px;
+  font-size: 2rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(88, 88, 88, 1) 100%
+  );
+}
+#subtitle {
+  color: rgb(65, 105, 225);
+}
+#projects {
+  width: 100%;
+  background-color: var(--bk-main);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+  border: 1px var(--bk-main) solid;
+}
+#project-head {
+  margin-top: 70px;
+}
+.projects-grid-cont {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  width: 90%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.project-tile {
+  background-color: var(--project-bk);
+  border: 3px var(--project-bk) solid;
+  border-radius: 3px;
+
+}
+.project-tile-img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.project-info-text {
+  padding: 0;
+  margin: 0;
+  color: var(white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ticks{
+  color: var(--acc2);
+}
+
+.project-tile:hover{
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  font-style: italic;
+}
+
+.project-info-text > a:link, .project-info-text > a:visited{
+  color: white;
+  text-decoration: none;
+}
+.project-info-text > a:hover{
+  color: rgb(144, 255, 255);
+}
+#FCC-P{
+  font-size: 1.25rem;
+}
+#contact-cont{
+  text-align: center;
+  width: 100%;
+  background-color: #45567d;
+  font-size: 1.5rem;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 25px;
+  border: 1px rgba(255, 0, 0, 0) solid;
+}
+#contact-head{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.cont-img{
+  width: var(--imgsz);
+  height: var(--imgsz);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+}
+.flex-section{
+  display: inline;
+}
+.contact-link-outer{
+  margin: 0;
+}
+.contact-link:link, .contact-link:visited{
+  color: white;
+  text-decoration: none;
+}
+.contact-link:hover{
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-flex{
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  .flex-section{
+    border: 3px red;
+    flex-basis: 100%;
+    font: 110%;
+  }
+  :root{
+    --imgsz: 4rem;
+  }
+}
